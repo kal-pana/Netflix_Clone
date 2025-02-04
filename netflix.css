@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(netflix_Background.jpg);
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 98vh;
+    position: relative;
+}
+
+.main .box {
+    background-color: black;
+    top: 0;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.7;
+}
+
+nav {
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-position: center;
+    height: 62px;
+}
+
+nav img {
+    color: red;
+    width: 144px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    padding: 10px;
+    color: white;
+    position: relative;
+    z-index: 10;
+}
+
+.button1 {
+    background-color: black;
+    border: 0.5px solid gray;
+    opacity: 0.6;
+    border-radius: 5px;
+    padding: 7px 35px;
+    color: white;
+    font-size: medium;
+}
+
+.button2 {
+    background-color: red;
+    padding: 7px 20px;
+    border: none;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+.navbutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.middle {
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    font-family: "Martel Sens", sans-serif;
+    gap: 25px;
+    /* flex-wrap: wrap; */
+    padding: 0 30px;
+}
+
+.middle> :nth-child(1) {
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+}
+
+.middle> :nth-child(2) {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.middle> :nth-child(3) {
+    font-size: 16px;
+    text-align: center;
+}
+
+input {
+    background-color: black;
+    opacity: 0.6;
+    height: 50px;
+    width: 350px;
+    border: 0.2px solid white;
+    color: white;
+    border-radius: 5px;
+    padding-left: 12px;
+    font-size: 16px;
+}
+
+.start button {
+    height: 50px;
+    width: 200px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    /* margin: 2px 5px; */
+    border: none;
+}
+
+.start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.separation {
+    height: 70px;
+    border: solid 5px #f5267c;
+    border-color: #f51f51 transparent transparent transparent;
+    border-radius: 200%/100px 100px 0 0;
+    /* margin-top: -20px; */
+    position: relative;
+}
+
+.redbutton:hover {
+    background-color: rgb(188, 37, 37);
+    border-color: rgb(188, 37, 37);
+}
+
+main {
+    background-color: black;
+    height: 102vh;
+}
+
+.trending {
+    color: white;
+    margin-top: 70px;
+    margin-left: 140px;
+    font-family: "Martel Sens", sans-serif;
+}
+
+select {
+    font-family: "Martel Sens", sans-serif;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: rgb(32, 24, 24);
+    /* background: transparent; */
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 12px;
+}
+
+.trendingbutton {
+    margin-left: 130px;
+}
+
+.trendingmovies {
+    /* height: 300px; */
+    width: 1180px;
+    background-color: black;
+    margin-left: 170px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    /* Enable horizontal scrolling */
+    scrollbar-width: none;
+    /* Hide scrollbar for Firefox */
+}
+
+/* .trendingmovies::-webkit-scrollbar {
+    display: none; 
+    } */
+
+.trendingmovies img {
+    border-radius: 7px;
+    margin-right: 40px;
+    width: 180px;
+    height: auto;
+    cursor: pointer;
+    animation: none;
+}
+
+.trendingmovies img:hover {
+    animation: zoom-in 0.3s ease forwards;
+}
+
+@keyframes zoom-in {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.05);
+    }
+}
+
+.main2h2 {
+    margin-left: 140px;
+    font-family: "Martel Sens", sans-serif;
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+.reason {
+    /* background-color: aqua; */
+    /* display: grid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* height: inherit;
+    width: inherit; */
+    margin-top: 3px;
+}
+
+.reason .boxe {
+    background-color: #1f1322;
+    /* height: 290px; */
+    width: 290px;
+    margin: 10px;
+    border-radius: 7px;
+}
+
+.boxe {
+    font-family: "Martel Sens", sans-serif;
+    color: white;
+    font-weight: 500;
+    height: 290px;
+}
+
+.boxe h2 {
+    margin-top: 25px;
+    margin-left: 12px;
+}
+
+.boxe p {
+    margin-top: 25px;
+    margin-left: 12px;
+    color: #a6a6b1;
+}
+
+.article {
+    font-family: "Martel Sens", sans-serif;
+    margin-top: 80px;
+    height: 500px;
+}
+
+.article h2 {
+    margin-left: 140px;
+    color: white;
+    font-size: 34px;
+}
+
+.questions {
+    margin-top: 15px;
+    cursor: pointer;
+    
+}
+
+.questionbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    height: 85px;
+    width: 1200px;
+    background-color: #2d2d2d;
+    margin-bottom: 8px;
+    margin-left: 144px;
+    font-size: 24px;
+    padding-left: 24px;
+}
+
+.questionbox:hover {
+    background-color: #484848;
+}
+
+.questionbox svg {
+    margin-right: 30px;
+}
+
+.footertag {
+    font-family: "Martel Sens", sans-serif;
+    margin-top: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 16px;
+    color: white;
+}
+
+.footertag .start {
+    margin-top: 20px;
+}
+
+.footertag .start input {
+    width: 600px;
+}
+
+.footertag .start button {
+    width: 200px;
+}
+
+/* .last {
+    height: 500px;
+  } */
+.sep {
+    height: 8px;
+    margin-top: 50px;
+    background-color: #484848;
+}
+
+.last{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.last-items{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.last-items a{
+    color: rgb(173, 164, 164);
+    font-size: 14px;
+    
+}
